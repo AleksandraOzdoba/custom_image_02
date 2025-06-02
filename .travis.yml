@@ -2,8 +2,8 @@ os: linux
 dist: focal
 language: generic
 vm:
-  use:
-    name: 02_image
+  create:
+    name: other_user01
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
