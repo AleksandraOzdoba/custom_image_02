@@ -2,8 +2,9 @@ os: linux
 dist: focal
 language: generic
 vm:
+  size: [large]
   create:
-    name: other_user01
+    name: other_author02
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
@@ -11,5 +12,5 @@ addons:
     update: true
 script:
   - echo $TRAVIS_COMMIT_MESSAGE
-  - sleep 2
+  - sleep 6
   - echo "OK"
